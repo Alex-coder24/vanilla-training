@@ -1,0 +1,114 @@
+/* #region product */
+.product {
+  padding-top: 16px;
+  padding-bottom: 38px;
+  margin-bottom: 100px;
+}
+.dark-body-mode .product {
+}
+.product-subtitle {
+  font-weight: 700;
+  font-size: 32px;
+  max-width: 331px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.product-svg-cont {
+  border-radius: 19px;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #02897a;
+  margin-bottom: 32px;
+}
+.violet {
+  background-color: #740a76;
+}
+.blue {
+  background-color: #4d8dff;
+}
+.red {
+  background-color: #f03e3d;
+}
+.product-icons {
+  fill: #fff;
+}
+.product-item-subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.product-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  /* line-height: 26px; */
+  line-height: 1.625;
+  text-align: center;
+  width: 240px;
+}
+.product-btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  width: 175px;
+  height: 53px;
+  background-color: #02897a;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+.product-btn:hover,
+.product-btn:focus {
+  background-color: #fff;
+  color: #173a56;
+  border: none;
+  border: 1px solid #bcd0e5;
+}
+.dark-body-mode .product-btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+@media screen and (min-width: 1150px) {
+  .product {
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-top: 0;
+  }
+  .product-subtitle {
+    max-width: 530px;
+  }
+  .product-list {
+    gap: 30px;
+    margin-bottom: 76px;
+  }
+  .product-item {
+    width: calc((100% - 90px) / 4);
+  }
+  .product-svg-cont {
+    margin-bottom: 26px;
+  }
+  .product-svg-cont {
+    margin-left: 0;
+  }
+  .product-item-subtitle {
+    text-align: left;
+  }
+  .product-item-text {
+    text-align: left;
+  }
+}
+/* #endregion product */

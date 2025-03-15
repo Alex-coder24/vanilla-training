@@ -1,3 +1,15 @@
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -6,29 +18,56 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
   padding: 0;
-  list-style: none;
 }
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #22343d;
+  margin: 0;
+  /* transition: background-color 50ms ease-in-out, color 50ms ease-in-out; */
+}
+body.dark-body-mode {
+  background-color: #1f2e35;
+  color: #fff;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+input {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  outline: none;
+  padding: 0;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.container {
+  max-width: 411px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1150px) {
+  .container {
+    max-width: 1150px;
+  }
 }
